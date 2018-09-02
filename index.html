@@ -3,39 +3,105 @@
 
 <head>
     <title>My custom Bulma website</title>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link rel="stylesheet" href="dist/app.css">
+    <style>
+        .header-image {
+            background-image: url("https://cdn.pixabay.com/photo/2017/03/28/22/55/night-photograph-2183637_960_720.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #999;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 class="title">
-        Bulma
-    </h1>
+    <section class="hero is-primary is-fullheight header-image">
+        <!-- Hero header: will stick at the top -->
+        <div class="hero-head">
+            <header class="navbar">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="http://bulma.io">
+                        <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+                    </a>
 
-    <p class="subtitle">
-        Modern CSS framework based on
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox</a>
-    </p>
-
-    <div class="field">
-        <div class="control">
-            <input class="input" type="text" placeholder="Input">
+                    <div class="navbar-burger" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="navbar-menu" v-bind:class="{ 'is-active' : showNav }">
+                    <!-- navbar start, navbar end -->
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="/about">About</a>
+                        <a class="navbar-item" href="/path">Path</a>
+                        <a class="navbar-item" href="/blog">Blog</a>
+                    </div>
+                </div>
+            </header>
         </div>
-    </div>
 
-    <div class="field">
-        <p class="control">
-            <span class="select">
-                <select>
-                    <option>Select dropdown</option>
-                </select>
-            </span>
-        </p>
-    </div>
 
-    <div class="buttons">
-        <a class="button is-primary">Primary</a>
-        <a class="button is-link">Link</a>
-    </div>
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    Title
+                </h1>
+                <h2 class="subtitle">
+                    Subtitle
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="columns">
+            <div class="column is-one-fifth">
+                <h6 class="title is-6">Shop.</h6>
+                <ul class="footer__body__list">
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                </ul>
+            </div>
+            <div class="column is-one-fifth">
+                <h6 class="title is-6">Info</h6>
+                <ul>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                </ul>
+            </div>
+            <div class="column is-one-fifth">
+                <h6 class="title is-6">Service</h6>
+                <ul>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                </ul>
+            </div>
+            <div class="column is-one-fifths">
+                <h6 class="title is-6">Contact</h6>
+                <p>(225) 644-0301 12091 Central Plank Rd Eclectic, Alabama(AL), 36024</p>
+            </div>
+            <div class="column is-one-fifth">
+                <h6 class="title is-6">Service</h6>
+                <ul>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
