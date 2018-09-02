@@ -4,6 +4,8 @@
 <head>
     <title>My custom Bulma website</title>
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="dist/app.css">
     <style>
         .header-image {
@@ -60,25 +62,45 @@
 
     <footer class="footer">
         <div class="columns">
-            <div class="column is-one-fifth">
-                <h6 class="title is-6">Shop.</h6>
+            <!-- shop -->
+            <div class="column is-2">
+                <h6 class="title is-6">Product</h6>
                 <ul class="footer__body__list">
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
+                    <li>
+                        <a href="">API</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#">iOS App</a>
+                    </li>
+                    <li>
+                        <a href="#">Android App</a>
+                    </li>
                 </ul>
             </div>
-            <div class="column is-one-fifth">
+
+            <!-- info -->
+            <div class="column is-2">
                 <h6 class="title is-6">Info</h6>
                 <ul>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
+                    <li>
+                        <a href="#">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Press</a>
+                    </li>
+                    <li>
+                        <a href="#">Corporate</a>
+                    </li>
                 </ul>
             </div>
-            <div class="column is-one-fifth">
+            <!-- Service -->
+            <div class="column is-2">
                 <h6 class="title is-6">Service</h6>
                 <ul>
                     <li>Lorem, ipsum.</li>
@@ -87,10 +109,28 @@
                     <li>Lorem, ipsum.</li>
                 </ul>
             </div>
-            <div class="column is-one-fifths">
+
+            <!-- Contact -->
+            <div class="column is-4">
                 <h6 class="title is-6">Contact</h6>
                 <p>(225) 644-0301 12091 Central Plank Rd Eclectic, Alabama(AL), 36024</p>
+                <div class="field has-addons">
+                    <p class="control has-icons-left has-icons-right">
+                        <input class="input" type="email" placeholder="Email">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                            <i class="fas fa-check"></i>
+                        </span>
+                    </p>
+                    <div class="control">
+                        <a class="button is-info">Subscribe</a>
+                    </div>
+                </div>
             </div>
+
+            <!-- social media -->
             <div class="column is-one-fifth">
                 <h6 class="title is-6">Service</h6>
                 <ul>
@@ -99,6 +139,21 @@
                     <li>Lorem, ipsum.</li>
                     <li>Lorem, ipsum.</li>
                 </ul>
+            </div>
+        </div>
+        <hr class="dash__line">
+        <div class="columns">
+            <div class="column">
+                <div class="content">
+                    <p>© 2018 Hopiness, Inc. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="column is-6 has-text-right">
+                <div class="content">
+                    <p>
+                        <a href="#">Privacy & terms</a>
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
