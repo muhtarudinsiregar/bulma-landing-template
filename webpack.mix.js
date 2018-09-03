@@ -11,4 +11,6 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.sass('src/app.scss', 'dist/');
+mix.combine([
+    'src/js/navbar.js'
+], 'dist/all.js').sass('src/app.scss', 'dist/');
