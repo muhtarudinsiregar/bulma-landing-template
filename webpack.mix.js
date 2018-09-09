@@ -16,3 +16,6 @@ mix.combine([
 ], 'dist/all.js')
 
 mix.sass('src/sass/app.scss', 'dist/');
+mix.options({
+    processCssUrls: false // Process/optimize relative stylesheet url()'s. Set to false, if you don't want them touched.
+});
